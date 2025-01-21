@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
-import Features from './components/Features';
-import Articles from './components/Articles';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
+import Navbar from './Navbar.jsx';
+import Banner from './Banner.jsx';
+import Features from './Features.jsx';
+import Articles from './Articles.jsx';
+import Testimonials from './Testimonials.jsx';
+import Footer from './Footer.jsx';
 import './App.css';
 
 function App() {
