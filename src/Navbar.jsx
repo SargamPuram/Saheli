@@ -11,16 +11,23 @@ function Navbar() {
     navigate('/about'); // Redirect to the home page
   };
 
+  const handlePredictTestClick = () => {
+    navigate('/predict'); // Redirect to the home page
+  };
+  const handleArticlesTestClick = () => {
+    navigate('/articles'); // Redirect to the home page
+  };
+
   return (
     <header className="App-header">
       <div className="Navbar">
         <div className="outItem">
-          <div className="Name cursor-pointer onClick={handleHomeTestClick}">SAHELI</div>
+          <div className="Name cursor-pointer" onClick={handleHomeTestClick}>SAHELI</div>
           <div className="item">
             <div className="nav-item cursor-pointer" onClick={handleHomeTestClick}>HOME</div>
             <div className="nav-item cursor-pointer" onClick={handleAboutTestClick}>ABOUT</div>
-            <div className="nav-item"><a href="#services">SERVICES</a></div>
-            <div className="nav-item"><a href="#articles">ARTICLES</a></div>
+            <div className="nav-item cursor-pointer" onClick={handlePredictTestClick}>PREDICT</div>
+            <div className="nav-item cursor-pointer" onClick={handleArticlesTestClick}>ARTICLES</div>
             <div className="nav-item"><a href="#refer">REFER US</a></div>
           </div>
         </div>

@@ -10,6 +10,8 @@ import {
 import Predict from './components/Predict.jsx';
 import Home from './pages/Home.jsx';
 import About from './components/About.jsx';
+import ArticlesPage from './components/ArticlesPage.jsx';
+
 
 function App() {
   useEffect(() => {
@@ -37,6 +39,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/predict" element={<Predict />} />
       <Route path="/about" element={<About />} />
+      <Route path="/articles" element={<ArticlesPage />} />
     </Routes>
       <Footer />
     </div>
