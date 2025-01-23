@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar.jsx';
-import Banner from './Banner.jsx';
-import Features from './Features.jsx';
-import Articles from './Articles.jsx';
-import Testimonials from './Testimonials.jsx';
 import Footer from './Footer.jsx';
 import './App.css';
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Predict from './components/Predict.jsx';
+import Home from './pages/Home.jsx';
+import About from './components/About.jsx';
 
 function App() {
   useEffect(() => {
@@ -25,16 +29,19 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <BrowserRouter>
+    
+    <div className="h-screen">
       <Navbar />
-      <main>
-        <Banner />
-        <Features />
-        <Articles />
-        <Testimonials />
-      </main>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/predict" element={<Predict />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
       <Footer />
     </div>
+   
+      </BrowserRouter>
   );
 }
 
