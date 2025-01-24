@@ -4,7 +4,7 @@ const Predict = () => {
   // State to store the input values
   const [formData, setFormData] = useState({
     age: "",
-    marriageStatus: "", 
+    marriageStatus: "", // Set default to an empty string
     weight: "",
     bmi: "",
     regularCycle: "", 
@@ -134,8 +134,9 @@ const Predict = () => {
     <div className="min-h-screen bg-[#fff7f8] w-full flex flex-col justify-center items-center align-middle p-4">
     <div className="font-mono flex flex-col w-full max-w-lg space-y-6">
       <div className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">PCOS Risk Prediction</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Patient Risk Prediction</h1>
       </div>
+      <br></br><br></br>
   
   
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -290,7 +291,7 @@ const Predict = () => {
             <option value="severe">Severe</option>
           </select>
         </div>
-  
+  <br></br>
         <div className="text-center">
           <button
             type="submit"
@@ -299,11 +300,12 @@ const Predict = () => {
             Submit
           </button>
         </div>
+        <br></br>
         {/* Show errors if any */}
       {error && <p className="text-red-500 text-center">{error}</p>}
   
         {/* Show response from the backend */}
-        <p className="text-center">{response}</p>
+        <p className="text-center ">{response}</p>
       </form>
     </div>
   </div>

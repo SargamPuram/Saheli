@@ -13,20 +13,24 @@ const About = () => {
       </section>
       <br></br> <br></br> <br></br>
       <section className="mb-24 flex-1">
-        <h2 className="text-3xl font-semibold text-yellow-500 mb-8 py-4">What We Offer</h2> <br></br>
+        <h2 className="text-3xl font-semibold text-yellow-500 mb-8 py-4">How PCOS Affects Women</h2> <br></br>
         <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-800 mb-8">
-          Saheli is designed to empower women with knowledge and support. We provide:
+          PCOS can affect a woman's body in many ways. Here are some of the most common symptoms:
         </p>
         <ul className="text-lg list-disc list-inside max-w-3xl mx-auto text-gray-800 space-y-6">
-          <li>Personalized health insights based on your symptoms and history.</li>
-          <li>Guidance on lifestyle changes to manage PCOS effectively.</li>
-          <li>Emotional support through our friendly AI assistant.</li>
+          <li>Irregular periods or no periods at all</li>
+          <li>Excess androgen (male hormone) levels, which can lead to symptoms like acne, facial hair growth, and male pattern baldness</li>
+          <li>Weight gain or difficulty losing weight</li>
+          <li>Ovulation problems, which can make it difficult to get pregnant</li>
+          <li>Skin problems, such as oily skin or acanthosis nigricans (dark, velvety patches of skin on the back of the neck, armpits, or groin)</li>
+          <li>Sleep apnea</li>
+          <li>Mood swings and depression</li>
         </ul>
         <div className="mt-8 flex justify-center">
           <img
             className="w-48 h-48 rounded-full shadow-xl"
             src="https://i.pinimg.com/736x/6e/20/f2/6e20f2f3cd78048b3f426917943fcaed.jpg"
-            alt="What we offer illustration"
+            alt="PCOS effects illustration"
           />
         </div>
       </section>
