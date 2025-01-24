@@ -43,7 +43,12 @@ const ArticlesPage = () => {
             <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-800 mb-4">
               {article.description}
             </p>
-            <a href={article.link} className="text-lg text-blue-500 underline" target="_blank" rel="noopener noreferrer">
+            <a
+              href={article.link}
+              className="inline-block text-lg text-white bg-pink-500 hover:bg-pink-600 py-2 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 mb-8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Read More
             </a>
 

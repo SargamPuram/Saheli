@@ -28,7 +28,7 @@ function Navbar() {
             <div className="nav-item cursor-pointer" onClick={handleAboutTestClick}>ABOUT</div>
             <div className="nav-item cursor-pointer" onClick={handlePredictTestClick}>PREDICT</div>
             <div className="nav-item cursor-pointer" onClick={handleArticlesTestClick}>ARTICLES</div>
-            <div className="nav-item"><a href="#refer">REFER US</a></div>
+            {/* <div className="nav-item"><a href="#refer">REFER US</a></div> */}
           </div>
         </div>
       </div>
