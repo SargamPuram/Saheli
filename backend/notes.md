@@ -1,3 +1,4 @@
+```python
 import joblib
 from sklearn.linear_model import LinearRegression
 
@@ -10,4 +11,5 @@ model_filename = "model.sav"
 joblib.dump(linear_regressor, model_filename)
 
 print(f"Linear Regression model saved as {model_filename}")
+```
 
