@@ -1,12 +1,13 @@
-##  For importing the model
+import joblib
+from sklearn.linear_model import LinearRegression
 
-import pickle
+# your trained a Linear Regression model
+linear_regressor = LinearRegression()  # Initialize model
+linear_regressor.fit(X_train, y_train)  # Train the model (make sure X_train & y_train are defined)
 
-# Assuming your trained model is stored in a variable called 'model'
-model_filename = "pcos_model.pkl"
+# Saving the trained model
+model_filename = "model.sav"
+joblib.dump(linear_regressor, model_filename)
 
-# Save the model
-with open(model_filename, 'wb') as file:
-    pickle.dump(model, file)
+print(f"Linear Regression model saved as {model_filename}")
 
-print(f"Model saved as {model_filename}")
