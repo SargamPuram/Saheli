@@ -11,6 +11,7 @@ import Predict from './components/Predict.jsx';
 import Home from './pages/Home.jsx';
 import About from './components/About.jsx';
 import ArticlesPage from './components/ArticlesPage.jsx';
+import GoodThoughts from './pages/GoodThoughts.jsx';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Route path="/predict" element={<Predict />} />
       <Route path="/about" element={<About />} />
       <Route path="/articles" element={<ArticlesPage />} />
+      <Route path="/thoughts" element={<GoodThoughts />} />
     </Routes>
       <Footer />
     </div>

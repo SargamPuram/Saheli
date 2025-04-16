@@ -4,7 +4,7 @@ const Predict = () => {
   // State to store the input values
   const [formData, setFormData] = useState({
     age: "",
-    marriageStatus: "", // Set default to an empty string
+    marriageStatus: "", 
     weight: "",
     bmi: "",
     regularCycle: "", 
@@ -104,7 +104,7 @@ const Predict = () => {
 
     // Send the data to the backend
     try {
-      const response = await fetch("http://127.0.0.1:8000/", {
+      const response = await fetch("https://pcos-prediction-backend.onrender.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -17,6 +17,9 @@ function Navbar() {
   const handleArticlesTestClick = () => {
     navigate('/articles'); // Redirect to the home page
   };
+  const handleGoodTestClick = () => {
+    navigate('/articles'); // Redirect to the home page
+  };
 
   return (
     <header className="App-header">
@@ -28,6 +31,7 @@ function Navbar() {
             <div className="nav-item cursor-pointer" onClick={handleAboutTestClick}>ABOUT</div>
             <div className="nav-item cursor-pointer" onClick={handlePredictTestClick}>PREDICT</div>
             <div className="nav-item cursor-pointer" onClick={handleArticlesTestClick}>ARTICLES</div>
+            {/* <div className="nav-item cursor-pointer" onClick={handleGoodTestClick}>Thoughts</div> */}
             {/* <div className="nav-item"><a href="#refer">REFER US</a></div> */}
           </div>
         </div>

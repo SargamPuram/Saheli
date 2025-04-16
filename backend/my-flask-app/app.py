@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import pickle
 import os
+from typing import List
 
 
 class Parameters(BaseModel):
@@ -64,3 +65,4 @@ async def get_prediction(patientParameters: Parameters):
         return {"atRisk": True}
     else:
         return {"atRisk": False}
+    
